@@ -13,7 +13,7 @@ Observando o funcionamento de um supermercado, observamos que correntemente os f
 
 A etiqueta consiste, basicamente, em uma ESP (NODEMCU V3) que recebe os dados de uma central e os encaminha para o lcd. Esses dados serão exibidos em cada prateleira, informando produto, valor e respectivos descontos.
 
-![(Z:\20191610041\Downloads
+![](Imagens/img1.jpg)
 
 Na imagem acima podemos observar o escopo do nosso produto.
 
