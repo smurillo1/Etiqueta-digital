@@ -9,7 +9,7 @@ Projeto realizado para disciplina de técnicas de programação.
 - Ficha técnica.
 
 # O que é a etiqueta digital?
-Observando o funcionamento de um supermercado, observamos que correntemente os funcionários precisam alterar o preço dos produtos nas prateleiras, pensando nisso, criamos uma etiqueta digital que tem como objetivo principal automatizar esta função.
+Observando o funcionamento de um supermercado, constatamos que correntemente os funcionários precisam alterar o preço dos produtos nas prateleiras, pensando nisso, criamos uma etiqueta digital que tem como objetivo principal automatizar esta função.
 
 A etiqueta consiste, basicamente, em uma ESP (NODEMCU V3) que recebe os dados de uma central e os encaminha para o lcd. Esses dados serão exibidos em cada prateleira, informando produto, valor e respectivos descontos.
 
@@ -55,6 +55,15 @@ Por fim, seleciona-se "Atualizar" e o produto descrito na interface aparecerá n
 Utilizamos o sensor infravermelho captura das informações do estado da prateleira. A ESP12 é a peça mais importante do circuito, pois capta as informações vindas da central e as transfere para o LCD, assim como também recebe do infravermelho e identifica a stiuação da prateleira.
 
  Nossa alternativa para realizar o funcionamento offline é plugar um cabo USB para o computador para que o usuário possa obter as informações via serial pelo software.
+
+# Futuras melhorias
+
+- Maior número de informações por etiqueta;
+- Inserção de um código de barras;
+- Desing da interface;
+- Automatização do processo.
+
+Esperamos que tenha gostado do nosso produto, salientamos que é apenas um protótipo e por isso pode sofrer alterações.
  
  
 
