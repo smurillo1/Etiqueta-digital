@@ -13,7 +13,7 @@ Observando o funcionamento de um supermercado, observamos que correntemente os f
 
 A etiqueta consiste, basicamente, em uma ESP (NODEMCU V3) que recebe os dados de uma central e os encaminha para o lcd. Esses dados serão exibidos em cada prateleira, informando produto, valor e respectivos descontos.
 
-![](Imagens\etiqueta.JPG)
+![ssss](Área de Trabalho\etiqueta.jpg)
 
 Na imagem acima podemos observar o escopo do nosso produto.
 
@@ -22,7 +22,7 @@ Na imagem acima podemos observar o escopo do nosso produto.
 ## Funcionamento da etiqueta
 A ideia do projeto é que funcionário do supermercado possa ter alterar o valor dos seus produtos sem precisar perder tanto tempo e gastar tanto com material. Para isso, será disponibilizado uma interface na qual haverá os campos a serem preenchidos para que possa ser executada a inserção dos dados do produto. Controlaremos também a necessidade de reposição (ou não) de repor o produto, através de um sensor infravermelho que detecta a presença da mercadoria na prateleira e encaminha uma mensagem para a central.
 
-![](Imagens\etiqueta.jpg)
+![savio](Imagens\etiqueta.jpg)
 
 # Utilizando a etiqueta
 
