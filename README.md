@@ -22,11 +22,11 @@ Na imagem acima podemos observar o escopo do nosso produto.
 ## Funcionamento da etiqueta
 A ideia do projeto é que funcionário do supermercado possa ter alterar o valor dos seus produtos sem precisar perder tanto tempo e gastar tanto com material. Para isso, será disponibilizado uma interface na qual haverá os campos a serem preenchidos para que possa ser executada a inserção dos dados do produto. Controlaremos também a necessidade de reposição (ou não) de repor o produto, através de um sensor infravermelho que detecta a presença da mercadoria na prateleira e encaminha uma mensagem para a central.
 
-![](C:imagens/etiqueta.JPG)
+![](Imagens/etiqueta.jpg)
 
 # Utilizando a etiqueta
 
-![(
+![etiqueta](Imagens\etiqueta.jpg)
 
 A tela de inicial da aplicação do projeto é bastante direta. Primeiro, o usuário deve conectar o seu cabo microUSB da ESP12 com alguma entrada USB do seu computador. A seguir, deve ser selecionada a porta na qual a placa está conectada. Para que as informações sejam passadas, faz-se necessário ter uma velocidade específica (em bauds) para comunicação, sendo selecionado 115200 a padrão da placa. Em seguida, na aba "Etiqueta" preencha os seguintes dados:
 
