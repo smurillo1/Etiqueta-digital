@@ -37,6 +37,8 @@ Por fim, basta clicar em "Atualizar" e o produto descrito na interface aparecer�
 
 ![qt-lista](figuras/exe.jpeg)
 
+Ao lado do botão "Atualizar", caso haja a necessidade de reposição, será exibida uma mensagem identificando que a prateleira está vazia e é preciso repor o estoque.
+
 # Etiqueta WEB
 
 Desenvolvemos também uma central WEB que possui as mesmas funções da central offline.
@@ -64,7 +66,3 @@ Utilizamos um sensor infravermelho do tipo emissor-receptor para a captura das i
 - Design da interface;
 
 Esperamos que tenha gostado do nosso produto, salientamos que é apenas um protótipo e por isso pode sofrer alterações.
- 
- 
-
-
