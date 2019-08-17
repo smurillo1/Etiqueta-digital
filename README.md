@@ -42,7 +42,7 @@ Por fim, seleciona-se "Atualizar" e o produto descrito na interface aparecerá n
 
 Disponibilizamos também uma central web que tem as mesmas funções da central offline.
 
-![web-lista](figuras/web.jpg)
+![web-lista](figuras/web.png)
 # Ficha técnica
 ## Materiais utilizados:
 - ESP12;
