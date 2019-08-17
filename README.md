@@ -13,7 +13,7 @@ Observando o funcionamento de um supermercado, observamos que correntemente os f
 
 A etiqueta consiste, basicamente, em uma ESP (NODEMCU V3) que recebe os dados de uma central e os encaminha para o lcd. Esses dados serão exibidos em cada prateleira, informando produto, valor e respectivos descontos.
 
-![](imagens/etiqueta.jpg)
+![](etiqueta.jpg)
 
 Na imagem acima podemos observar o escopo do nosso produto.
 
@@ -46,11 +46,11 @@ Por fim, seleciona-se "Atualizar" e o produto descrito na interface aparecerá n
 - Protoboard;
 - cabos.
 
-![materiais](imagnes/materias.jpg)
+![materiais](imagens/materias.jpg)
 
 # O Circuito
 
-![circuito](Imagens\circuito.jpg)
+![circuito](imagens\circuito.jpg)
 
 Utilizamos o sensor infravermelho captura das informações do estado da prateleira. A ESP12 é a peça mais importante do circuito, pois capta as informações vindas da central e as transfere para o LCD, assim como também recebe do infravermelho e identifica a stiuação da prateleira.
 
