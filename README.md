@@ -39,16 +39,19 @@ Por fim, basta clicar em "Atualizar" e o produto descrito na interface aparecer�
 
 # Etiqueta WEB
 
-Disponibilizamos também uma central WEB que tem as mesmas funções da central offline.
+Desenvolvemos também uma central WEB que possui as mesmas funções da central offline.
 
 ![web-lista](figuras/web.png)
+
+Segue o link para acesso a plataforma online do projeto: http://etiquetadigital.herokuapp.com/
+
 # Ficha técnica
 ## Materiais utilizados:
-- ESP12;
+- ESP-12e;
 - LCD;
 - Sensor infravermelho;
 - Protoboard;
-- cabos.
+- Jumpers para conexão.
 
 # O Circuito
 
