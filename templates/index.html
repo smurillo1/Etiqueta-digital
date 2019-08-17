@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome">
+    </div>
+    <div class="form-group">
+        <label for="desconto">Desconto:</label>
+        <input type="text" class="form-control" id="desconto">
+    </div><div class="form-group">
+        <label for="desconto_atacado">Desconto para compras em atacado:</label>
+        <input type="text" class="form-control" id="desconto_atacado">
+    </div>
+    <div class="form-group">
+        <label for="preco_bruto">Preço Bruto:</label>
+        <input type="text" class="form-control" id="preco_bruto">
+    </div>
+    <button type="button" class="btn btn-danger" onclick="enviar()">
+        Enviar
+    </button>
+
+    <h2 id="repor"> <font color="red"> <br> </font></h2>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script>
+        function enviar() {
+            var nome = document.getElementById("nome");
+            var preco_bruto = document.getElementById("preco_bruto");
+            var desconto = document.getElementById("desconto");
+            var desconto_atacado = document.getElementById("desconto_atacado");
+            var mensagem=nome.value+","+desconto.value+","+desconto_atacado.value+","+preco_bruto.value;
+            conexao.emit("enviandoJSON",function(){
+                conexao.emit(mensagem);
+            });
+            window.alert(mensagem);
+            //{"nome" : nome.value,"desconto" : desconto.value,"desconto_atacado": desconto_atacado.value,"preco_bruto":preco_bruto.value}
+        }
+
+
+        var conexao = io.connect("http://etiquetadigital.herokuapp.com")
+        conexao.on("atualiza", function (dados) {
+            if ("repor_produtos" in dados) {
+                if(dados["repor_produtos"]=="true")
+                    document.getElementById("repor").innerHTML = "REPOR PRODUTO";
+                else
+                document.getElementById("repor").innerHTML = "";
+            }
+        })
+    </script>
+</body>
+
+</html>
