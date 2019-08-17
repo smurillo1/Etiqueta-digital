@@ -13,7 +13,7 @@ Observando o funcionamento de um supermercado, observamos que correntemente os f
 
 A etiqueta consiste, basicamente, em uma ESP (NODEMCU V3) que recebe os dados de uma central e os encaminha para o lcd. Esses dados serão exibidos em cada prateleira, informando produto, valor e respectivos descontos.
 
-![etiqueta](figuraas/etiqueta.jpg)
+![etiqueta](imagens/etiqueta.jpg)
 
 Na imagem acima podemos observar o escopo do nosso produto.
 
@@ -25,7 +25,7 @@ A ideia do projeto é que funcionário do supermercado possa ter alterar o valor
 
 # Utilizando a etiqueta
 
-![qt-conect](conect.jpg)
+![qt-conect](imagens/conect.jpg)
 
 A tela de inicial da aplicação do projeto é bastante direta. Primeiro, o usuário deve conectar o seu cabo microUSB da ESP12 com alguma entrada USB do seu computador. A seguir, deve ser selecionada a porta na qual a placa está conectada. Para que as informações sejam passadas, faz-se necessário ter uma velocidade específica (em bauds) para comunicação, sendo selecionado 115200 a padrão da placa. Em seguida, na aba "Etiqueta" preencha os seguintes dados:
 
@@ -36,7 +36,7 @@ A tela de inicial da aplicação do projeto é bastante direta. Primeiro, o usu�
 
 Por fim, seleciona-se "Atualizar" e o produto descrito na interface aparecerá no lcd. Acompanhe a imagem abaixo:
 
-![qt-lista](exe.jpg)
+![qt-lista](imagens/exe.jpg)
 
 # Ficha técnica
 ## Materiais utilizados:
@@ -46,11 +46,11 @@ Por fim, seleciona-se "Atualizar" e o produto descrito na interface aparecerá n
 - Protoboard;
 - cabos.
 
-![materiais](Imagens\etiqueta.JPG)
+![materiais](imagnes/materias.jpg)
 
 # O Circuito
 
-![circuito](Imagens\etiqueta.JPG)
+![circuito](Imagens\circuito.jpg)
 
 Utilizamos o sensor infravermelho captura das informações do estado da prateleira. A ESP12 é a peça mais importante do circuito, pois capta as informações vindas da central e as transfere para o LCD, assim como também recebe do infravermelho e identifica a stiuação da prateleira.
 
