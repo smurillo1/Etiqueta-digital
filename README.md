@@ -24,7 +24,7 @@ A ideia do projeto é de que o funcionário do supermercado alterar o valor dos 
 
 # Utilizando a etiqueta
 
-![qt-conect](figuras/conect.jpg)
+![qt-conect](figuras/connect.jpeg)
 
 A tela de inicial da aplicação do projeto é bastante direta. Primeiro, o usuário deve conectar o seu cabo microUSB da ESP-12e com alguma entrada USB do seu computador. A seguir, deve ser selecionada a porta na qual a placa está conectada. Para que as informações sejam passadas, faz-se necessário ter uma velocidade específica para comunicação que foi definida em 115200 bauds como velocidade padrão. Em seguida, na aba "Etiqueta" é necessário preencher os seguintes dados:
 
@@ -35,7 +35,7 @@ A tela de inicial da aplicação do projeto é bastante direta. Primeiro, o usu�
 
 Por fim, basta clicar em "Atualizar" e o produto descrito na interface aparecerá no display LCD. Acompanhe a imagem abaixo:
 
-![qt-lista](figuras/exe.jpg)
+![qt-lista](figuras/exe.jpeg)
 
 # Etiqueta WEB
 
